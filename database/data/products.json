@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Barang 1",
+        "type_id" : "1",
+        "detail" : "ini barang",
+        "stock" : "100",
+        "price" : "5000",
+        "image" : "-"
+    },
+    {
+        "name" : "Barang 1",
+        "type_id" : "1",
+        "detail" : "ini barang",
+        "stock" : "100",
+        "price" : "5000",
+        "image" : "-"
+    },
+    {
+        "name" : "Barang 1",
+        "type_id" : "1",
+        "detail" : "ini barang",
+        "stock" : "100",
+        "price" : "5000",
+        "image" : "-"
+    }
+]

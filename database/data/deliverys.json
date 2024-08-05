@@ -1,0 +1,11 @@
+[
+    {
+        "name" : "Pick Up"
+    },
+    {
+        "name" : "Delivery by AU Post"
+    },
+    {
+        "name" : "Other"
+    }
+]
