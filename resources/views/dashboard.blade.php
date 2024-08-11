@@ -296,8 +296,8 @@
 
     </section><!-- /Call To Action Section -->
 
-    <!-- Produk Section -->
-    <section id="product" class="product section">
+    <!-- Portfolio Section -->
+    <section id="product" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -306,31 +306,29 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
           data-sort="original-order">
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
             @foreach ($items as $item)
-              <div class="col-lg-4 col-md-6 product-item isotope-item filter-app">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
                 <img src="{{ asset('/storage/product/' . $item->image) }}" class="img-fluid"
                   alt="">
-                <div class="product-info">
+                <div class="portfolio-info">
                   <h4>{{ $item->name }}</h4>
                   <p>{{ '$ ' . number_format($item->price, 2, ',', '.') }}</p>
                   <a href="{{ asset('/storage/product/' . $item->image) }}"
-                    data-gallery="product-gallery-app" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="product-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                    title="{{ $item->name }}" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="{{ route('dashboard.show', $item->id) }}" title="More Details"
+                    class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
-              </div>
+              </div><!-- End Portfolio Item -->
             @endforeach
-          </div><!-- End product Container -->
+          </div><!-- End Portfolio Container -->
         </div>
-
       </div>
-
-    </section><!-- /product Section -->
+    </section><!-- /Portfolio Section -->
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section light-background">

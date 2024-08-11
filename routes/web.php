@@ -23,6 +23,7 @@ use App\Http\Controllers\DashboardController;
 
 Route::get('/', [DashboardController::class, 'index']);
 Route::resource('/admin', \App\Http\Controllers\UserController::class);
+Route::resource('/dashboard', \App\Http\Controllers\DashboardController::class);
 Route::resource('/product', \App\Http\Controllers\ProductController::class);
 Route::resource('/role', \App\Http\Controllers\RoleController::class);
 Route::resource('/type', \App\Http\Controllers\TypeController::class);
